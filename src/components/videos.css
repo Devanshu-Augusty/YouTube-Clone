@@ -1,0 +1,123 @@
+.videos-content {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-box {
+    margin: 8px;
+    height: 210px;
+    width: 250px;
+    overflow: hidden;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+}
+
+.video-box img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    /* clip: rect(0px, 250px, 145px, 0px); */ /* to crop image */
+}
+
+.video-desc {
+    background: #282828;
+    color: #b9b7b7;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+.video-desc h3 {
+    font-size: 0.9rem;
+    font-style: italic;
+    height: 54px;
+    overflow: hidden;
+    margin-left: 7px;
+    margin-top: 2px;
+    text-overflow: ellipsis
+}
+
+.video-link {
+    text-decoration: none;
+}
+
+.video-desc p {
+    margin-left: 7px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.video-channel-title {
+    display: flex;
+    align-items: center;
+}
+
+.video-channel-title span {
+    margin-top: 3px;
+    color: white;
+}
+
+.channel-link {
+    text-decoration: none;
+    color: white;
+}
+
+.channel-card {
+    margin: 10px;
+    height: 210px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.channel-card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.channel-title-tick {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.channel-title-tick span {
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 400px) {
+    .video-box {
+        margin-bottom: 10px;
+        height: 240px;
+        width: 300px;
+    }
+    
+    .video-box img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .video-desc {
+        background: #282828;
+        color: #b9b7b7;
+        border: 1px solid rgb(165, 165, 165);
+    }
+    
+    .video-desc h3 {
+        font-size: 0.9rem;
+        font-style: italic;
+        height: 54px;
+        overflow: hidden;
+        margin-left: 7px;
+        margin-top: 2px;
+        text-overflow: ellipsis
+    }
+}

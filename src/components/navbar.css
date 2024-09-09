@@ -1,0 +1,66 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.youtube-icon {
+    font-size: 50px;
+    color: red;
+    margin-top: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.youtube-link {
+    text-decoration: none;
+    color: red;
+}
+
+.nav input {
+    /* height: 20px; */
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.search .icon {
+    color: red;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .nav input {
+        width: auto;
+    }
+
+    .youtube-icon {
+        margin-left: 15px;
+    }
+
+    .search {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav input {
+        width: 120px;
+    }
+}

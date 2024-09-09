@@ -1,0 +1,135 @@
+.feed {
+    display: flex;
+    background-color: black;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 95vh;
+    min-width: 150px;
+    overflow: auto;
+    position: fixed;
+    background-color: black;
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.side-bar::-webkit-scrollbar-track {
+    background-color: rgb(218, 218, 218);
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.side-bar button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: 10px 10px 0px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.side-bar button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.side-bar button:hover .side-logo {
+    color: #fff;
+}
+
+.side-logo {
+    font-size: 1.6em;
+    color: red;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.side-text {
+    font-size: 1em;
+}
+
+.videos {
+    margin-left: 150px;
+}
+
+.search-videos {
+    margin-left: -150px;
+}
+
+.videos .search-text {
+    margin-left: -105px;
+}
+
+.videos h2 {
+    margin: 12px;
+    color: red;
+    font-size: 1.7em;
+}
+
+@media screen and (max-width: 600px) {
+    .feed {
+        flex-direction: column;
+    }
+
+    .side-bar {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        min-width: 150px;
+        position: static;
+        overflow: auto;
+        background-color: black;
+    }
+
+    .side-bar button {
+        background-color: black;
+        padding-right: 7px;
+        border-radius: 10px;
+        margin-bottom: 4px;
+    }
+
+    .side-logo {
+        padding: 3px;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
+    .side-bar::-webkit-scrollbar-track {
+        background-color: black;
+    }
+    
+    .side-bar::-webkit-scrollbar-thumb {
+        background-color: red;
+    }
+    
+    .videos {
+        margin: auto;
+    }
+
+    .search-videos {
+        margin-left: auto;
+    }
+
+    .videos .search-text {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-videos {
+        margin-left: auto;
+    }
+
+    .videos .search-text {
+        margin-left: 20px;
+    }
+}
